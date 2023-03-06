@@ -29,9 +29,9 @@ Route::middleware([
         return redirect()->route('admin_dashboard');
     })->name('dashboard');
 });
-
+Route::group(['middleware' => ['adminlogin']], function () {
 Route::get('/admin-dashboard', AdminDashboard::class)->name('admin_dashboard');
-
+});
 // HomePage
 
 Route::get('/', HomePage::class)->name('home_page');

@@ -7,6 +7,10 @@
         <a href="{{route('admin_dashboard')}}" class="nav-label">Dashboard</a>
         <ul class="nav nav-sidebar">
           <li class="nav-item">
+            <a href="{{url('/')}}" target="_blank" class="nav-link ">
+              <i class="ri-home-4-fill"></i> <span>Website</span></a>
+          </li>
+          <li class="nav-item">
             <a href="#" class="nav-link active"><i class="ri-calendar-todo-fill"></i> <span>Events Management</span></a>
           </li>
 
@@ -19,7 +23,7 @@
           <li class="nav-item">
             <a href="" class="nav-link has-sub"><i class="ri-account-circle-line"></i> <span>User Pages</span></a>
             <nav class="nav nav-sub">
-              <a href="#" class="nav-sub-link">User Profile</a>
+              <a href="{{route('profile.show')}}" class="nav-sub-link">User Profile</a>
               <a href="#" class="nav-sub-link">People &amp; Groups</a>
               <a href="#" class="nav-sub-link">Activity Log</a>
               <a href="#" class="nav-sub-link">Events</a>

@@ -7,36 +7,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="max-image-preview:large" />
         <title>Club</title>  
- 
-      
-        <link rel="stylesheet" id="jkit-elements-main-css" href="wp-content/plugins/jeg-elementor-kit/assets/css/elements/main.css?ver=2.5.13" media="all" />
-		 <link rel="stylesheet" id="jkit-elements-main-css" href="extra-style.css" media="all" />
-    
-        <link rel="stylesheet" id="hfe-style-css" href="wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.6.13" media="all" />
-        <link rel="stylesheet" id="elementor-icons-css" href="wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.18.0" media="all" />
-        <link rel="stylesheet" id="elementor-frontend-css" href="wp-content/uploads/elementor/css/custom-frontend-lite.min.css?ver=1676393002" media="all" />
-        <link rel="stylesheet" id="swiper-css" href="wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6" media="all" />
-        <link rel="stylesheet" id="elementor-post-8-css" href="wp-content/uploads/elementor/css/post-8.css?ver=1676342780" media="all" />
-        <link rel="stylesheet" id="elementor-pro-css" href="wp-content/uploads/elementor/css/custom-pro-frontend-lite.min.css?ver=1676393002" media="all" />
-        <link rel="stylesheet" id="elementor-post-456-css" href="wp-content/uploads/elementor/css/post-456.css?ver=1676393003" media="all" />
-        <link rel="stylesheet" id="hfe-widgets-style-css" href="wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.13" media="all" />
-        <link rel="stylesheet" id="font-awesome-5-all-css" href="wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.11.0" media="all" />
-        <link rel="stylesheet" id="font-awesome-4-shim-css" href="wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.11.0" media="all" />
-        <link rel="stylesheet" id="elementor-post-110-css" href="wp-content/uploads/elementor/css/post-110.css?ver=1676342780" media="all" />
-        <link rel="stylesheet" id="elementor-post-123-css" href="wp-content/uploads/elementor/css/post-123.css?ver=1676342781" media="all" />
+        <link rel="stylesheet" id="jkit-elements-main-css" href="{{asset('wp-content/plugins/jeg-elementor-kit/assets/css/elements/main.css?ver=2.5.13" media="all')}}" />
+		 <link rel="stylesheet" id="jkit-elements-main-css" href="{{asset('wp-content/extra-style.css')}}" media="all" />
+        <link rel="stylesheet" id="hfe-style-css" href="{{asset('wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.6.13')}}" media="all" />
+        <link rel="stylesheet" id="elementor-icons-css" href="{{asset('wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.18.0')}}" media="all" />
+        <link rel="stylesheet" id="elementor-frontend-css" href="{{asset('wp-content/uploads/elementor/css/custom-frontend-lite.min.css?ver=1676393002')}}" media="all" />
+        <link rel="stylesheet" id="swiper-css" href="{{asset('wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6')}}" media="all" />
+        <link rel="stylesheet" id="elementor-post-8-css" href="{{asset('wp-content/uploads/elementor/css/post-8.css?ver=1676342780')}}" media="all" />
+        <link rel="stylesheet" id="elementor-pro-css" href="{{asset('wp-content/uploads/elementor/css/custom-pro-frontend-lite.min.css?ver=1676393002')}}" media="all" />
+        <link rel="stylesheet" id="elementor-post-456-css" href="{{asset('wp-content/uploads/elementor/css/post-456.css?ver=1676393003')}}" media="all" />
+        <link rel="stylesheet" id="hfe-widgets-style-css" href="{{asset('wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.13')}}" media="all" />
+        <link rel="stylesheet" id="font-awesome-5-all-css" href="{{asset('wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.11.0')}}" media="all" />
+        <link rel="stylesheet" id="font-awesome-4-shim-css" href="{{asset('wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.11.0')}}" media="all" />
+        <link rel="stylesheet" id="elementor-post-110-css" href="{{asset('wp-content/uploads/elementor/css/post-110.css?ver=1676342780')}}" media="all" />
+        <link rel="stylesheet" id="elementor-post-123-css" href="{{asset('wp-content/uploads/elementor/css/post-123.css?ver=1676342781')}}" media="all" />
         <link
             rel="stylesheet"
             id="google-fonts-1-css"
             href="https://fonts.googleapis.com/css?family=Raleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAllura%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.1.1"
             media="all"
         />
-        <link rel="stylesheet" id="elementor-icons-shared-0-css" href="wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all" />
-        <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all" />
-        <link rel="stylesheet" id="elementor-icons-jkiticon-css" href="wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.css?ver=2.5.13" media="all" />
+        <link rel="stylesheet" id="elementor-icons-shared-0-css" href="{{asset('wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3')}}" media="all" />
+        <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="{{asset('wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3')}}" media="all" />
+        <link rel="stylesheet" id="elementor-icons-jkiticon-css" href="{{asset('wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.css?ver=2.5.13')}}" media="all" />
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-        <script src="wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.11.0" id="font-awesome-4-shim-js"></script>
-        <script src="wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
-        <script src="wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+        <script src="{{asset('wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.11.0" id="font-awesome-4-shim-js')}}"></script>
+        <script src="{{asset('wp-includes/js/jquery/jquery.min.js?ver=3.6.1')}}" id="jquery-core-js"></script>
+        <script src="{{asset('wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2')}}" id="jquery-migrate-js"></script>
         <link rel="https://api.w.org/" href="wp-json/" />
         <link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/456" />
      
@@ -97,6 +94,9 @@
     >
  
         <div id="page" class="hfeed site">
+
+            <!-- livewire header  -->
+@include('livewire.frontend.common.header')
 
 
             <div data-elementor-type="wp-page" data-elementor-id="456" class="elementor elementor-456" id="dcdvg"> 
@@ -595,7 +595,8 @@
                                 </div>
 
 
-<p>event includepending </p>
+                                @include('livewire.frontend.common.event_grid')
+
                                   
  
       
@@ -994,7 +995,7 @@
                                     </div>
                                 </div>
  
-               <p>City include</p>
+                                @include('livewire.frontend.common.city')
  
     </div>  
     
@@ -1511,9 +1512,7 @@
 				
 	<!-- End Testimonial -->		
             </div>
-
-<p>footer include pending </p>
-			
+            @include('livewire.frontend.common.footer')
         </div>
         <!-- #page -->
 
@@ -1549,13 +1548,13 @@
             }
         </style>
  
-        <link rel="stylesheet" id="jeg-dynamic-style-css" href="wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.2.9" media="all" />
-        <link rel="stylesheet" id="tiny-slider-css" href="wp-content/plugins/jeg-elementor-kit/assets/js/tiny-slider/tiny-slider.css?ver=2.9.3" media="all" />
-        <link rel="stylesheet" id="e-animations-css" href="wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.11.0" media="all" />
-        <script src="wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.11.0" id="elementor-webpack-runtime-js"></script>
-        <script src="wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.11.0" id="elementor-frontend-modules-js"></script>
-        <script src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
-        <script src="wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+        <link rel="stylesheet" id="jeg-dynamic-style-css" href="{{asset('wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.2.9')}}" media="all" />
+        <link rel="stylesheet" id="tiny-slider-css" href="{{asset('wp-content/plugins/jeg-elementor-kit/assets/js/tiny-slider/tiny-slider.css?ver=2.9.3')}}" media="all" />
+        <link rel="stylesheet" id="e-animations-css" href="{{asset('wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.11.0')}}" media="all" />
+        <script src="{{asset('wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.11.0" id="elementor-webpack-runtime-js')}}"></script>
+        <script src="{{asset('wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.11.0" id="elementor-frontend-modules-js')}}"></script>
+        <script src="{{asset('wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js')}}"></script>
+        <script src="{{asset('wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js')}}"></script>
 		
 		<!-- Video Play Script -->
         <script id="elementor-frontend-js-before">
@@ -1624,27 +1623,26 @@
 		<!-- End Video Play Script -->
 		
 		
-        <script src="wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.11.0" id="elementor-frontend-js"></script>
-      
-        <script src="wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-element.js?ver=2.5.13" id="jkit-sticky-element-js"></script>
-        <script src="wp-content/plugins/jeg-elementor-kit/assets/js/elements/animated-text.js?ver=2.5.13" id="jkit-element-animatedtext-js"></script>
-        <script src="wp-content/plugins/jeg-elementor-kit/assets/js/elements/nav-menu.js?ver=2.5.13" id="jkit-element-navmenu-js"></script>
-        <script src="wp-includes/js/comment-reply.min.js?ver=6.1.1" id="comment-reply-js"></script>
-        <script src="wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
-        <script src="wp-content/plugins/jeg-elementor-kit/assets/js/elements/testimonials.js?ver=2.5.13" id="jkit-element-testimonials-js"></script>
-        <script src="wp-content/plugins/jeg-elementor-kit/assets/js/tiny-slider/tiny-slider.js?ver=2.9.3" id="tiny-slider-js"></script>
-        <script src="wp-content/plugins/jeg-elementor-kit/assets/js/elements/client-logo.js?ver=2.5.13" id="jkit-element-clientlogo-js"></script>
-        <script src="wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.11.0" id="elementor-pro-webpack-runtime-js"></script>
-        <script src="wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
-        <script src="wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
-        <script src="wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5" id="wp-hooks-js"></script>
-        <script src="wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae" id="wp-i18n-js"></script> 
-        <script src="wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.11.0" id="elementor-pro-frontend-js"></script>
-        <script src="wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.11.0" id="pro-elements-handlers-js"></script>
-        <script src="wp-content/plugins/mp3-music-player-by-sonaar/public/js/sr-scripts.js?ver=2.0" id="sr-scripts-js"></script>
-        <script src="wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>      
-        <script src="wp-includes/js/wp-util.min.js?ver=6.1.1" id="wp-util-js"></script>        
-        <script src="wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.7.9.1" id="wpforms-elementor-js"></script>
+        <script src="{{asset('wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.11.0" id="elementor-frontend-js')}}"></script>
+        <script src="{{asset('wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-element.js?ver=2.5.13')}}" id="jkit-sticky-element-js"></script>
+        <script src="{{asset('wp-content/plugins/jeg-elementor-kit/assets/js/elements/animated-text.js?ver=2.5.13')}}" id="jkit-element-animatedtext-js"></script>
+        <script src="{{asset('wp-content/plugins/jeg-elementor-kit/assets/js/elements/nav-menu.js?ver=2.5.13')}}" id="jkit-element-navmenu-js"></script>
+        <script src="{{asset('wp-includes/js/comment-reply.min.js?ver=6.1.1')}}" id="comment-reply-js"></script>
+        <script src="{{asset('wp-includes/js/imagesloaded.min.js?ver=4.1.4')}}" id="imagesloaded-js"></script>
+        <script src="{{asset('wp-content/plugins/jeg-elementor-kit/assets/js/elements/testimonials.js?ver=2.5.13')}}" id="jkit-element-testimonials-js"></script>
+        <script src="{{asset('wp-content/plugins/jeg-elementor-kit/assets/js/tiny-slider/tiny-slider.js?ver=2.9.3')}}" id="tiny-slider-js"></script>
+        <script src="{{asset('wp-content/plugins/jeg-elementor-kit/assets/js/elements/client-logo.js?ver=2.5.13')}}" id="jkit-element-clientlogo-js"></script>
+        <script src="{{asset('wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.11.0')}}" id="elementor-pro-webpack-runtime-js"></script>
+        <script src="{{asset('wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9')}}" id="regenerator-runtime-js"></script>
+        <script src="{{asset('wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0')}}" id="wp-polyfill-js"></script>
+        <script src="{{asset('wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5')}}" id="wp-hooks-js"></script>
+        <script src="{{asset('wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae')}}" id="wp-i18n-js"></script> 
+        <script src="{{asset('wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.11.0')}}" id="elementor-pro-frontend-js"></script>
+        <script src="{{asset('wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.11.0')}}" id="pro-elements-handlers-js"></script>
+        <script src="{{asset('wp-content/plugins/mp3-music-player-by-sonaar/public/js/sr-scripts.js?ver=2.0')}}" id="sr-scripts-js"></script>
+        <script src="{{asset('wp-includes/js/underscore.min.js?ver=1.13.4')}}" id="underscore-js"></script>      
+        <script src="{{asset('wp-includes/js/wp-util.min.js?ver=6.1.1')}}" id="wp-util-js"></script>        
+        <script src="{{asset('wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.7.9.1')}}" id="wpforms-elementor-js"></script>
          @livewireScripts
     </body>
 </html>

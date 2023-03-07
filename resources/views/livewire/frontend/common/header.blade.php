@@ -65,10 +65,10 @@ padding-bottom: 30px;
                                      <a class="nav-link" href="{{route('event_page')}}">Guestlist</a>
                                  </li>
                                  <li class="nav-item">
-                                     <a class="nav-link" href="events.php">Tickets</a>
+                                     <a class="nav-link" href="{{route('event_page')}}">Tickets</a>
                                  </li>
                                  <li class="nav-item">
-                                     <a class="nav-link" href="events.php">BottleService</a>
+                                     <a class="nav-link" href="{{route('event_page')}}">BottleService</a>
                                  </li>
                              </ul>
                            
@@ -81,7 +81,7 @@ padding-bottom: 30px;
                          <div class="elementor-element elementor-element-c85e8b5 elementor-widget elementor-widget-jkit_animated_text" data-id="c85e8b5" data-element_type="widget" data-widget_type="jkit_animated_text.default">
                              <div class="elementor-widget-container">
                                  <div class="jeg-elementor-kit jkit-animated-text jeg_module_456__63ed0fd049201" data-style="highlighted" data-text="Canck " data-shape="underline-zigzag">
-                                    <a href="index.php">
+                                    <a href="{{url('/')}}">
                                      <p class="animated-text">
                                          <span class="normal-text style-color"></span>
                                          <span class="dynamic-wrapper style-color">
@@ -105,16 +105,16 @@ padding-bottom: 30px;
                          <div class="container justify-content-center">
                              <ul class="nav navbar-nav w-100 flex-nowrap">
                                  <li class="nav-item active">
-                                     <a class="nav-link" href="events.php">Events</a>
+                                     <a class="nav-link" href="{{route('event_page')}}">Events</a>
                                  </li>
                                  <li class="nav-item">
-                                     <a class="nav-link" href="venues.php">Venues</a>
+                                     <a class="nav-link" href="{{route('Venues_page')}}">Venues</a>
                                  </li>
                                  <li class="nav-item">
-                                     <a class="nav-link" href="gallery.php">Gallery</a>
+                                     <a class="nav-link" href="{{route('details_page')}}">Gallery</a>
                                  </li>                                            
                                  <li class="nav-item">
-                                     <a class="nav-link" href="contact.php">Contact</a>
+                                     <a class="nav-link" href="{{route('contact_page')}}">Contact</a>
                                  </li>
 
                              </ul>
@@ -275,28 +275,28 @@ padding-bottom: 30px;
                                              <ul>
                                                 
                                                   <li class="page_item page-item-2">
-                                                     <a class="nav-link" href="index">Home</a>
+                                                     <a class="nav-link" href="{{url('/')}}">Home</a>
                                                  </li>
                                                  <li class="page_item page-item-2">
-                                                     <a class="nav-link" href="events.php">Guestlist</a>
+                                                     <a class="nav-link" href="{{route('event_page')}}">Guestlist</a>
                                                  </li>
                                                  <li class="page_item page-item-2">
-                                                     <a class="nav-link" href="events.php">Tickets</a>
+                                                     <a class="nav-link" href="{{route('event_page')}}">Tickets</a>
                                                  </li>
                                                  <li class="page_item page-item-2">
-                                                     <a class="nav-link" href="events.php">BottleService</a>
+                                                     <a class="nav-link" href="{{route('event_page')}}">BottleService</a>
                                                  </li>
                                                  <li class="page_item page-item-2">
-                                                     <a class="nav-link" href="events.php">Events</a>
+                                                     <a class="nav-link" href="{{route('event_page')}}">Events</a>
                                                  </li>
                                                  <li class="page_item page-item-2">
-                                                     <a class="nav-link" href="venues.php">Venues</a>
+                                                     <a class="nav-link" href="{{route('Venues_page')}}">Venues</a>
                                                  </li>
                                                  <li class="page_item page-item-2">
-                                                     <a class="nav-link" href="gallery.php">Gallery</a>
+                                                     <a class="nav-link" href="$">Gallery</a>
                                                  </li>                                            
                                                   <li class="page_item page-item-2">
-                                                     <a class="nav-link" href="contact.php">Contact</a>
+                                                     <a class="nav-link" href="{{route('contact_page')}}">Contact</a>
                                                  </li>                                                            
                                                  
                                                  

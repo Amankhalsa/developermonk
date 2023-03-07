@@ -8,6 +8,6 @@ class GuestlistPage extends Component
 {
     public function render()
     {
-        return view('livewire.frontend.guestlist-page');
+        return view('livewire.frontend.guestlist-page')->layout('layouts.frontend');
     }
 }

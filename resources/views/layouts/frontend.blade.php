@@ -89,8 +89,8 @@
 }
 </style>
    @livewireStyles
-    <body class="page-template page-template-elementor_header_footer page page-id-456 wp-embed-responsive ehf-header ehf-footer ehf-template-twentytwentythree ehf-stylesheet-twentytwentythree jkit-color-scheme elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-456"
-    >
+    <body         style="background-color: #000000;"
+    class="page-template page-template-elementor_header_footer page page-id-456 wp-embed-responsive ehf-header ehf-footer ehf-template-twentytwentythree ehf-stylesheet-twentytwentythree jkit-color-scheme elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-456" >
     <div id="page" class="hfeed site">
 
         <!-- livewire header  -->

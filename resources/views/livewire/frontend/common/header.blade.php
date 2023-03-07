@@ -62,7 +62,7 @@ padding-bottom: 30px;
                              <ul class="nav navbar-nav w-100 flex-nowrap">
                                 
                                  <li class="nav-item">
-                                     <a class="nav-link" href="events.php">Guestlist</a>
+                                     <a class="nav-link" href="{{route('event_page')}}">Guestlist</a>
                                  </li>
                                  <li class="nav-item">
                                      <a class="nav-link" href="events.php">Tickets</a>

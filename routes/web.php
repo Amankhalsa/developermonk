@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\Backend\AdminDashboard;
+use App\Http\Livewire\Frontend\EventsPage;
 use App\Http\Livewire\Frontend\HomePage;
 use Illuminate\Support\Facades\Route;
 
@@ -35,3 +36,5 @@ Route::get('/admin-dashboard', AdminDashboard::class)->name('admin_dashboard');
 // HomePage
 
 Route::get('/', HomePage::class)->name('home_page');
+Route::get('/events', EventsPage::class)->name('event_page');
+

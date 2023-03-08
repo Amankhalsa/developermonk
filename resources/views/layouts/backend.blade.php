@@ -6,7 +6,6 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
         <!-- Scripts -->
-  
 
         <link rel="shortcut icon" type="image/x-icon" href="{{asset('backend/assets/img/favicon.png')}}">
 
@@ -16,9 +15,15 @@
         <!-- Template CSS -->
         <link rel="stylesheet" href="{{asset('backend/assets/css/style.min.css')}}">
         <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
+
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
+        @include('livewire.backend.common.slider')
+        <!-- sidebar -->
+      
+      @include('livewire.backend.common.header')
         <div class="min-h-screen bg-gray-100">
             <main>
                 {{ $slot }}
@@ -35,6 +40,29 @@
     <script src="{{asset('backend/assets/js/script.js')}}"></script>
     <script src="{{asset('backend/assets/js/db.data.js')}}"></script>
     <script src="{{asset('backend/assets/js/db.events.js')}}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+        @if(Session::has('message'))
+        var type = "{{ Session::get('alert-type','info') }}"
+        switch(type){
+            case 'info':
+            toastr.info(" {{ Session::get('message') }} ");
+            break;
+        
+            case 'success':
+            toastr.success(" {{ Session::get('message') }} ");
+            break;
+        
+            case 'warning':
+            toastr.warning(" {{ Session::get('message') }} ");
+            break;
+        
+            case 'error':
+            toastr.error(" {{ Session::get('message') }} ");
+            break; 
+        }
+        @endif 
+      </script>
         @livewireScripts
     </body>
 </html>

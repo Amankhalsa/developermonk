@@ -40,67 +40,21 @@
         <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=http%3A%2F%2Fsarangcollections.com%2Fpubb%2Fhome%2F" />
         <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=http%3A%2F%2Fsarangcollections.com%2Fpubb%2Fhome%2F&#038;format=xml" />
         <meta name="cdp-version" content="1.3.8" />
-        <meta
-            name="generator"
-            content="Elementor 3.11.0; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+        <meta name="generator"  content="Elementor 3.11.0; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
         />
     </head>
 <style>
-.elementor-456 .elementor-element.elementor-element-44c8d613 {
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    padding: 30px 0px 50px 0px;
-    z-index: 0;
-}
-    #dcdvg{margin-top:-8%;}
-    #gfftj { 
-    height: 100vh;
-}
-.elementor-456 .elementor-element.elementor-element-3e22b67 {
-    text-align: left;
-    margin-top: 20%;
-}
-#dgdgremlop {
-    margin-top: -250px;
-    position: relative;
-    z-index: 99;
-    height: 250px;
-    background-color: #00000000!important;
-}
-.elementor-456 .elementor-element.elementor-element-5327c756 .elementor-heading-title { 
-    font-size: 78px; 
-}
-#dvvdvbm{width:50%!important;}
-@media screen and (max-width: 480px){
-    #dvvdvbm{width:100%!important;}
-.elementor-widget:not(:last-child) {
-    margin-bottom: 5px;
-    margin-top: 50px!important;
-}
-#dsgvgeeg{padding: 0px 15px 0px 15px;}
- 
-#dgdgremlop {
-    margin-top: -512px;
-    position: relative;
-    z-index: 99;
-    height: 565px;
-    background-color: #000000eb!important;
-    /* margin-bottom: 166px; */
-}
-}
+.elementor-456 .elementor-element.elementor-element-44c8d613{transition:background .3s,border .3s,border-radius .3s,box-shadow .3s;padding:30px 0 50px;z-index:0}#dcdvg{margin-top:-8%}#gfftj{height:100vh}.elementor-456 .elementor-element.elementor-element-3e22b67{text-align:left;margin-top:20%}#dgdgremlop{margin-top:-250px;position:relative;z-index:99;height:250px;background-color:#00000000!important}.elementor-456 .elementor-element.elementor-element-5327c756 .elementor-heading-title{font-size:78px}#dvvdvbm{width:50%!important}@media screen and (max-width:480px){#dvvdvbm{width:100%!important}.elementor-widget:not(:last-child){margin-bottom:5px;margin-top:50px!important}#dsgvgeeg{padding:0 15px}#dgdgremlop{margin-top:-512px;position:relative;z-index:99;height:565px;background-color:#000000eb!important}}
 </style>
    @livewireStyles
     <body         style="background-color: #000000;"
     class="page-template page-template-elementor_header_footer page page-id-456 wp-embed-responsive ehf-header ehf-footer ehf-template-twentytwentythree ehf-stylesheet-twentytwentythree jkit-color-scheme elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-456" >
     <div id="page" class="hfeed site">
-
         <!-- livewire header  -->
-            @include('livewire.frontend.common.header')
-
-
+         @include('livewire.frontend.common.header')
         <main>
             {{ $slot }}
         </main>
-
         @include('livewire.frontend.common.footer')
     </div>
     @stack('modals')
@@ -109,35 +63,7 @@
         <!-- #page -->
 
         <style id="skip-link-styles">
-            .skip-link.screen-reader-text {
-                border: 0;
-                clip: rect(1px, 1px, 1px, 1px);
-                clip-path: inset(50%);
-                height: 1px;
-                margin: -1px;
-                overflow: hidden;
-                padding: 0;
-                position: absolute !important;
-                width: 1px;
-                word-wrap: normal !important;
-            }
-
-            .skip-link.screen-reader-text:focus {
-                background-color: #eee;
-                clip: auto !important;
-                clip-path: none;
-                color: #444;
-                display: block;
-                font-size: 1em;
-                height: auto;
-                left: 5px;
-                line-height: normal;
-                padding: 15px 23px 14px;
-                text-decoration: none;
-                top: 5px;
-                width: auto;
-                z-index: 100000;
-            }
+           .skip-link.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}.skip-link.screen-reader-text:focus{background-color:#eee;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
         </style>
  
         <link rel="stylesheet" id="jeg-dynamic-style-css" href="{{asset('wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.2.9')}}" media="all" />

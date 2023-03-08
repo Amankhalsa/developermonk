@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\Backend\AdminDashboard;
+use App\Http\Livewire\Backend\EditProfile;
 use App\Http\Livewire\Frontend\ContactPage;
 use App\Http\Livewire\Frontend\DetailsPage;
 use App\Http\Livewire\Frontend\EventsPage;
@@ -35,6 +36,12 @@ Route::middleware([
 });
 Route::group(['middleware' => ['adminlogin']], function () {
 Route::get('/admin-dashboard', AdminDashboard::class)->name('admin_dashboard');
+
+// EditProfile
+Route::prefix('admin')->group(function(){
+    Route::get('/edit-profile', EditProfile::class)->name('admin_ProfileEdit');
+});
+
 });
 // HomePage
 

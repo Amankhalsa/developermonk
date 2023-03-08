@@ -1,9 +1,6 @@
 <div>
     {{-- Do your work, then step back. --}}
-  @include('livewire.backend.common.slider')
-    <!-- sidebar -->
-  
-  @include('livewire.backend.common.header')
+
     <!-- header-main -->
       <div class="main main-app p-3 p-lg-4">
         <div class="d-md-flex align-items-center justify-content-between mb-4">

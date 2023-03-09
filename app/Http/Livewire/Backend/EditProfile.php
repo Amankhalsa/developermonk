@@ -35,7 +35,7 @@ class EditProfile extends Component
     }
 
     public function updateProfile(){
-
+    dd($this->all());
         User::where('id', $this->uid )->update([
             'name' => $this->name,
             'email' =>    $this->email,

@@ -11,7 +11,7 @@
               <i class="ri-home-4-fill"></i> <span>Website</span></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active"><i class="ri-calendar-todo-fill"></i> <span>Events Management</span></a>
+            <a href="{{route('admin_view_events')}}" class="nav-link active"><i class="ri-calendar-todo-fill"></i> <span>Events Management</span></a>
           </li>
 
         </ul>

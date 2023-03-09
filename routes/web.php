@@ -1,12 +1,15 @@
 <?php
 
+use App\Http\Livewire\Backend\AddEvents;
 use App\Http\Livewire\Backend\AdminDashboard;
 use App\Http\Livewire\Backend\EditProfile;
+use App\Http\Livewire\Backend\ManageEvents;
 use App\Http\Livewire\Frontend\ContactPage;
 use App\Http\Livewire\Frontend\DetailsPage;
 use App\Http\Livewire\Frontend\EventsPage;
 use App\Http\Livewire\Frontend\HomePage;
 use App\Http\Livewire\Frontend\VenuesPage;
+use Illuminate\Database\Capsule\Manager;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,6 +43,13 @@ Route::get('/admin-dashboard', AdminDashboard::class)->name('admin_dashboard');
 // EditProfile
 Route::prefix('admin')->group(function(){
     Route::get('/edit-profile', EditProfile::class)->name('admin_ProfileEdit');
+
+    Route::prefix('events')->group(function(){
+        Route::get('/view', ManageEvents::class)->name('admin_view_events');
+        Route::get('/add', AddEvents::class)->name('add_events');
+
+    });
+
 });
 
 });

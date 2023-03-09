@@ -1,8 +1,6 @@
 <div>
     {{-- Stop trying to control. --}}
 <div class="row main main-app p-3 p-lg-4">
-
-
         <div class="col-md-6">
             <div class="col-xl">
                 <div class="media-profile mb-5">

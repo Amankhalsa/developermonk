@@ -21,9 +21,9 @@ return new class extends Migration
             $table->text('address')->nullable();
             $table->string('min_age')->nullable();
             $table->string('featured')->nullable();
-            $table->text('Crowd')->nullable();
-            $table->string('Check_in')->nullable();
-            $table->string('Check_out')->nullable();
+            $table->text('crowd')->nullable();
+            $table->string('check_in')->nullable();
+            $table->string('check_out')->nullable();
             $table->longText('note')->nullable();
             $table->longText('map')->nullable();
             $table->string('event_thambnail')->nullable();

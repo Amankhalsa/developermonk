@@ -6,12 +6,21 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
         <!-- Scripts -->
+    <!-- Vendor CSS -->
+
+
+
+    <!-- Template CSS -->
 
         <link rel="shortcut icon" type="image/x-icon" href="{{asset('backend/assets/img/favicon.png')}}">
 
         <!-- Vendor CSS -->
         <link rel="stylesheet" href="{{asset('backend/lib/remixicon/fonts/remixicon.css')}}">
     
+    <link rel="stylesheet" href="{{asset('backend/lib/prismjs/themes/prism.min.css')}}">
+    <link rel="stylesheet" href="{{asset('backend/lib/bootstrap-tagsinput/bootstrap-tagsinput.css')}}">
+    <link rel="stylesheet" href="{{asset('backend/lib/fontawesome/css/all.min.css')}}">
+
         <!-- Template CSS -->
         <link rel="stylesheet" href="{{asset('backend/assets/css/style.min.css')}}">
         <!-- Styles -->
@@ -33,6 +42,12 @@
     <script src="{{asset('backend/lib/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('backend/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('backend/lib/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+
+    <script src="{{asset('backend/lib/bootstrap-tagsinput/bootstrap-tagsinput.min.js')}}"></script>
+    <script src="{{asset('backend/lib/typeahead/typeahead.bundle.min.js')}}"></script>
+    <script src="{{asset('backend/lib/cleavejs/cleave.min.js')}}"></script>
+    <script src="{{asset('backend/lib/cleavejs/addons/cleave-phone.us.js')}}"></script>
+
     <script src="{{asset('backend/lib/jquery.flot/jquery.flot.js')}}"></script>
     <script src="{{asset('backend/lib/jquery.flot/jquery.flot.stack.js')}}"></script>
     <script src="{{asset('backend/lib/jquery.flot/jquery.flot.resize.js')}}"></script>

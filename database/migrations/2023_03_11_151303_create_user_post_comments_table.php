@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ratings', function (Blueprint $table) {
+        Schema::create('user_post_comments', function (Blueprint $table) {
             $table->id();
-            $table->integer('event_id')->nullable();
-            $table->string('rev_id')->nullable();
-            $table->string('rev_star')->nullable();
-            $table->string('num_o_ratings')->nullable();
-            $table->integer('status')->default(1);
+            $table->integer('event_post_id')->nullable();
+            $table->integer('user_id')->nullable();
+            $table->text('comment')->nullable();
+            $table->integer('parent_comment_id')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ratings');
+        Schema::dropIfExists('user_post_comments');
     }
 };

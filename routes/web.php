@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\EditProfileContoller;
-use App\Http\Controllers\backend\EventController;
+use App\Http\Controllers\Backend\EventController;
 use App\Http\Livewire\Backend\AdminDashboard;
 
 use App\Http\Livewire\Frontend\ContactPage;

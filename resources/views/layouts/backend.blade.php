@@ -26,19 +26,19 @@
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
 
-        @livewireStyles
+  
     </head>
     <body class="font-sans antialiased">
-        @include('livewire.backend.common.slider')
+    @include('livewire.backend.common.slider')
         <!-- sidebar -->
       
-      @include('livewire.backend.common.header')
-        <div class="min-h-screen bg-gray-100">
+    @include('livewire.backend.common.header')
+        {{-- <div class="min-h-screen bg-gray-100">
             <main>
                 {{ $slot }}
             </main>
-        </div>
-        @stack('modals')
+        </div> --}}
+        @yield('content')
     <script src="{{asset('backend/lib/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('backend/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('backend/lib/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
@@ -78,6 +78,5 @@
         }
         @endif 
       </script>
-        @livewireScripts
     </body>
 </html>

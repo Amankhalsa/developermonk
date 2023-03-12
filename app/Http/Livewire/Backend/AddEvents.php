@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Backend;
 
 use App\Models\Event;
+use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -10,10 +11,10 @@ class AddEvents extends Component
 {
     use WithFileUploads;
 
-    public $club_name , $event_discription,$date,$time,
-    $venue,$crowd,$address,$location,$event_thambnail,
-    $event_multi,$ad_service_img,$min_age,$featured,$check_in,
+    public $club_name , $event_discription,$date,$time,$venue,$crowd,$address,$location,
+    $event_thambnail,$event_multi,$ad_service_img,$min_age,$featured,$check_in,
     $check_out,$sp_note,$ad_service_dis,$map;
+
     public function render()
     {
         return view('livewire.backend.add-events')->layout('layouts.backend');
@@ -26,7 +27,7 @@ class AddEvents extends Component
 //         'address' => 'required',
 //         'location'=> 'required',
 //         'check_in' => 'required',
-// 'check_out' => 'required',
+//         'check_out' => 'required',
 
     ];
 
@@ -44,7 +45,7 @@ public function saveEvent(){
 
 
 
-    Event::create([
+Event::create([
         'club_name' => $this->club_name,
         'event_discription' => $this->event_discription,
         'date'=> $this->date,

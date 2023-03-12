@@ -19,9 +19,7 @@ class EditProfileContoller extends Controller
             'name' => 'required|max:255',
             'email' => 'required',
             'phone' => 'required',
-
-           
-        ]);
+            ]);
                 $Authid  = Auth::user()->id;
                 $updateUser  = User::find($Authid);
                 $updateUser->name = $request->name;

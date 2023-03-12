@@ -10,7 +10,8 @@ class EventController extends Controller
 {
     //
     public function viewEvents(){
-        return view('backend.event.index');
+        $getevents =    Event::get();
+        return view('backend.event.index',compact('getevents'));
 
     } 
 
@@ -20,6 +21,12 @@ class EventController extends Controller
             'date' => 'required',
             'time' => 'required',
             ]);
+            $event_pic =  $request->file('event_thambnail');
+            if($event_pic){
+                $fileName = time().'_'. $event_pic->getClientOriginalName();
+                $filePath = $event_pic->storeAs('events', $fileName, 'public');
+            }
+         
         Event::create([
             'club_name' => $request->club_name,
             'event_discription' => $request->event_discription,
@@ -29,7 +36,7 @@ class EventController extends Controller
             'crowd' => $request->crowd,
             'address' => $request->address,
             'location' => $request->location,
-            'event_thambnail' => $request->event_thambnail,
+            'event_thambnail' => $fileName,
             'event_multi' => $request->event_multi,
             'ad_service_img' => $request->ad_service_img,
             'min_age' => $request->min_age,

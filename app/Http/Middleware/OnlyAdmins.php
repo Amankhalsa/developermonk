@@ -16,17 +16,17 @@ class OnlyAdmins
      */
     public function handle(Request $request, Closure $next): Response
     {
-        return $next($request);
-        // if(Auth::check() && Auth::user()->role_id == '1' ) {
+        if(Auth::check() && Auth::user()->role_id === 1 ) {
+            return $next($request);
           
-        //     }
+            }
     
-        // else {
-        //     // abort(403, 'Access denied');
-        //         Auth::guard('web')->logout();
-        //         $request->session()->invalidate();  
-        //         $request->session()->regenerateToken();
-        //     return redirect()->route('login')->with('status', 'Access denied');
-        // }
+        else {
+            // abort(403, 'Access denied');
+                Auth::guard('web')->logout();
+                $request->session()->invalidate();  
+                $request->session()->regenerateToken();
+            return redirect()->route('login')->with('status', 'Access denied');
+        }
     }
 }

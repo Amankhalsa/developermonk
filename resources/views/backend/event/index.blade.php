@@ -98,7 +98,7 @@
                   <div class="col-md-3">
                     <div class="mb-3">
                       <label for="EventThambnail" class="form-label">Event Thambnail</label>
-                      <input class="form-control" type="file" id="EventThambnail">
+                      <input class="form-control" type="file" id="EventThambnail" name="event_thambnail">
                   @error('event_thambnail')<span class="text-danger"> {{$message}}</span>  @enderror  
                    
                     </div>
@@ -132,8 +132,8 @@
                   <div class="col-md-4">
                     <div class="mb-3">
                       <label for="MultipleImages" class="form-label">Multiple Images</label>
-                      <input class="form-control" type="file" id="MultipleImages" multiple>
-                  @error('event_multi')<span class="text-danger"> {{$message}}</span>  @enderror  
+                      <input class="form-control" type="file" id="MultipleImages" name="multiplepic" multiple>
+                        @error('event_multi')<span class="text-danger"> {{$message}}</span>  @enderror  
                    
                     </div>
                   </div>

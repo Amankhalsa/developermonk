@@ -48,6 +48,8 @@ Route::prefix('admin')->group(function(){
         Route::get('/edit-profile', 'edit_profile')->name('admin_ProfileEdit');
         // update_profile
         Route::post('/update-profile', 'updateProfile')->name('update_profile');
+        // update_profile_pic
+        Route::post('/update-profile-pic', 'updateProfilePic')->name('update_profile_pic');
 
     
     });

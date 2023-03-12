@@ -40,4 +40,33 @@ class EditProfileContoller extends Controller
 
 
     }
+
+    public function updateProfilePic(Request $request){
+        $Authid  = Auth::user()->id;
+        $updatePic  = User::find($Authid);
+        $profile_pic =  $request->file('profile_photo');
+
+        if($profile_pic){
+            $fileName = time().'_'. $profile_pic->getClientOriginalName();
+            $filePath = $profile_pic->storeAs('profile', $fileName, 'public');
+            // $imagePath = Storage::path('public/profile/'. $this->profile_photo_path);
+            // if(File::exists($imagePath)){
+            //         unlink($imagePath);
+            //     }
+          
+        User::where('id',  $Authid )->update([
+            'profile_photo_path' =>     $fileName ,
+            ]);
+
+
+            
+                 $notification = array(
+                    'message' => 'Profile picture Updated ',
+                    'alert-type' => 'success'
+                );
+                return redirect()->back()->with($notification);
+
+            }
+    } 
+
 }

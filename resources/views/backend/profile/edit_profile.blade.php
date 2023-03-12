@@ -24,12 +24,12 @@
                 <p class="mb-0  py-2">City : {{isset(Auth::user()->city) ? ucwords(Auth::user()->city) : "NA"}}  </p>
                 <p class="mb-0  py-2">Address : {{isset(Auth::user()->address) ? ucwords(Auth::user()->address) : "NA"}}</p>
 
-                <form  wire:submit.prevent="updateProfilePic" enctype="multipart/form-data">
-
+                <form  method="post" action="{{route('update_profile_pic')}}" enctype="multipart/form-data">
+                        @csrf
 
                <div class="mb-3 mt-3">
                    <label for="formFile" class="form-label">Update Profile picture</label>
-                   <input class="form-control" type="file" wire:model="profile_photo"  id="formFile">
+                   <input class="form-control" type="file"  name="profile_photo"  id="formFile">
                 </div>
            
                         <button type="submit" wire:loading.attr="disabled"  class="btn btn-primary">Save</button>

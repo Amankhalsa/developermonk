@@ -2,10 +2,8 @@
 
 use App\Http\Controllers\Backend\EditProfileContoller;
 use App\Http\Controllers\backend\EventController;
-use App\Http\Livewire\Backend\AddEvents;
 use App\Http\Livewire\Backend\AdminDashboard;
-use App\Http\Livewire\Backend\EditProfile;
-use App\Http\Livewire\Backend\ManageEvents;
+
 use App\Http\Livewire\Frontend\ContactPage;
 use App\Http\Livewire\Frontend\DetailsPage;
 use App\Http\Livewire\Frontend\EventsPage;
@@ -56,7 +54,6 @@ Route::prefix('admin')->group(function(){
  Route::controller(EventController::class)->group(function () {
     Route::prefix('events')->group(function(){
 
-
         Route::get('/view', 'viewEvents')->name('admin_view_events');
 
         Route::post('/add', 'addEvents')->name('admin_add_events');
@@ -71,11 +68,11 @@ Route::prefix('admin')->group(function(){
 
 });
 
-    Route::prefix('events')->group(function(){
-        // Route::get('/view', ManageEvents::class)->name('admin_view_events');
-        Route::get('/add', AddEvents::class)->name('add_events');
+    // Route::prefix('events')->group(function(){
+    //     // Route::get('/view', ManageEvents::class)->name('admin_view_events');
+    //     Route::get('/add', AddEvents::class)->name('add_events');
 
-    });
+    // });
 
 });
 

@@ -40,12 +40,10 @@ class EventController extends Controller
             'ad_service_dis' => $request->ad_service_dis,
             'map' => $request->map,
             ]);
-          
             $notification = array(
                 'message' => ' Event Published ',
                 'alert-type' => 'success'
             );
-            
             return redirect()->route('admin_view_events')->with($notification);
             
     }

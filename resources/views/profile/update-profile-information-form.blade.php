@@ -1,10 +1,10 @@
 <x-form-section submit="updateProfileInformation">
     <x-slot name="title">
-        {{-- {{ __('Profile Information') }} --}}
+
     </x-slot>
 
     <x-slot name="description">
-        {{-- {{ __('Update your account\'s profile information and email address.') }} --}}
+
     </x-slot>
 
     <x-slot name="form">
@@ -12,18 +12,8 @@
         @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
             <div x-data="{photoName: null, photoPreview: null}" class="col-span-6 sm:col-span-4">
                 <!-- Profile Photo File Input -->
-                <input type="file" class="hidden"
-                            wire:model="photo"
-                            x-ref="photo"
-                            x-on:change="
-                                    photoName = $refs.photo.files[0].name;
-                                    const reader = new FileReader();
-                                    reader.onload = (e) => {
-                                        photoPreview = e.target.result;
-                                    };
-                                    reader.readAsDataURL($refs.photo.files[0]);
-                            " />
-
+                <input type="file" class="hidden"  wire:model="photo"  x-ref="photo"  x-on:change="photoName = $refs.photo.files[0].name;const reader = new FileReader(); reader.onload = (e) => {
+                                        photoPreview = e.target.result;}; reader.readAsDataURL($refs.photo.files[0]);" />
                 <x-label for="photo" value="{{ __('Photo') }}" />
 
                 <!-- Current Profile Photo -->

@@ -6,9 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+
     public function up(): void
     {
         Schema::create('events', function (Blueprint $table) {
@@ -20,7 +18,6 @@ return new class extends Migration
             $table->string('time')->nullable();
             $table->string('venue')->nullable();
             $table->longText('crowd')->nullable();
-
             $table->text('address')->nullable();
             $table->text('location')->nullable();
             $table->string('event_thambnail')->nullable();

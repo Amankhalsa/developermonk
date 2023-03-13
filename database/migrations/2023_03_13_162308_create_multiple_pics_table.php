@@ -3,26 +3,27 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
 return new class extends Migration
 {
 
     public function up(): void
     {
-        Schema::create('ratings', function (Blueprint $table) {
+        Schema::create('multiple_pics', function (Blueprint $table) 
+        {
             $table->id();
-            $table->integer('event_id')->nullable();
-            $table->string('rev_id')->nullable();
-            $table->string('rev_star')->nullable();
-            $table->string('num_o_ratings')->nullable();
+            $table->string('event_id')->nullable();
+            $table->string('multipic')->nullable();
+            $table->integer('order')->nullable();
             $table->integer('status')->default(1);
             $table->timestamps();
         });
     }
 
-
     public function down(): void
     {
-        Schema::dropIfExists('ratings');
+
+        Schema::dropIfExists('multiple_pics');
+
     }
+
 };

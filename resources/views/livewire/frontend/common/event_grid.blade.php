@@ -21,192 +21,46 @@
         <div class="row">
                     <div class="col-md-12">  
                          <div class="row">
-                                    <div  class="col-md-4">
-                                        <a  href="event-details.php"> 
-                                        <div class="elementor-widget-wrap elementor-element-populated" id="hgdfh">
-                                            <div id="kjngkr">Featured</div>
-                                             <img id="grgrgrgrynjyth" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-club-party-flyer-design-template-4229436f6b6ead72108acfb808e9ab73_screen.jpg?ts=1637051413"  class="img-responsive" />
-                                            
-                                            <div class="elementor-element elementor-element-43f37ec5 elementor-widget elementor-widget-heading" data-id="43f37ec5" data-element_type="widget" data-widget_type="heading.default">
-                                                <div class="elementor-widget-container">
-                                                    <h2 class="elementor-heading-title elementor-size-default" id="sgggg">
-                                                        CENTRAL CEE at 44 Toronto</h2>
-                                                </div>
-                                                <div class="elementor-widget-container">
-                                                    <ul class="elementor-icon-list-items"> 
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-text" id="dgdgdgdg" style="font-size: 14px;"><i id="njgnj" class="fa">&#xf041;</i> 44 Toronto</span>
-                                                        </li> 
-                                                    </ul>
-                                                    <div style="width: 3.5rem;border-bottom-width: 0.5px;border-bottom: 1 solid #e5e7eb;margin-left:4%;margin-bottom: 4%;"></div>
-                                                </div>
-                                               </a>  
-                                                <div class="row" style="margin-bottom: 5%;">
-                                                    <div  class="col-md-6 col-7"><span class="elementor-icon-list-text" id="dgdgdgdg2">16, 2023 @ 10:00 pm</span></div>
-                                                    <div  class="col-md-6 col-5"><span class="elementor-icon-list-text" id="dgdgdgdg3">
-                                                        <i id="njgnj" class="fa fa-star checked" style="font-size: 18px;color: #ffc107;"></i> 4.5 
-                                                        <a href="" id="sdgtmmmm">All Review</a></span>
+                            @php
+                            $getevents = DB::table('events')->get();
+                            @endphp
+                                @if(isset( $getevents))
+                                    @foreach( $getevents as $event)
+                                        <div  class="col-md-4">
+                                            <a  href="event-details.php"> 
+                                            <div class="elementor-widget-wrap elementor-element-populated" id="hgdfh">
+                                                <div id="kjngkr">Featured</div>
+                                                <img id="grgrgrgrynjyth" src="{{isset($event->event_thambnail) ? asset('storage/events/'.$event->event_thambnail) : 'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-club-party-flyer-design-template-4229436f6b6ead72108acfb808e9ab73_screen.jpg?ts=1637051413' }}"  class="img-responsive" />
+                                                
+                                                <div class="elementor-element elementor-element-43f37ec5 elementor-widget elementor-widget-heading" data-id="43f37ec5" data-element_type="widget" data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h2 class="elementor-heading-title elementor-size-default" id="sgggg">
+                                                            {{isset($event->club_name) ? $event->club_name : "NA"}}</h2>
+                                                    </div>
+                                                    <div class="elementor-widget-container">
+                                                        <ul class="elementor-icon-list-items"> 
+                                                            <li class="elementor-icon-list-item">
+                                                                <span class="elementor-icon-list-text" id="dgdgdgdg" style="font-size: 14px;">
+                                                                    <i id="njgnj" class="fa">&#xf041;</i> {{isset($event->venue) ? $event->venue : "NA"}}</span>
+                                                            </li> 
+                                                        </ul>
+                                                        <div style="width: 3.5rem;border-bottom-width: 0.5px;border-bottom: 1 solid #e5e7eb;margin-left:4%;margin-bottom: 4%;"></div>
+                                                    </div>
+                                                </a>  
+                                                    <div class="row" style="margin-bottom: 5%;">
+                                                        <div  class="col-md-6 col-7"><span class="elementor-icon-list-text" id="dgdgdgdg2"> {{ isset($event->date) ? $event->date : "NA" }} @  {{ isset($event->time) ? $event->time : ""}}</span></div>
+                                                        <div  class="col-md-6 col-5"><span class="elementor-icon-list-text" id="dgdgdgdg3">
+                                                            <i id="njgnj" class="fa fa-star checked" style="font-size: 18px;color: #ffc107;"></i> 4.5 
+                                                            <a href="" id="sdgtmmmm">All Review</a></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-    
-                                    <div  class="col-md-4">
-                                        <a  href="event-details.php"> 
-                                        <div class="elementor-widget-wrap elementor-element-populated" id="hgdfh">
-                                            <div id="kjngkr">Featured</div>
-                                             <img id="grgrgrgrynjyth" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-club-party-flyer-design-template-4229436f6b6ead72108acfb808e9ab73_screen.jpg?ts=1637051413"  class="img-responsive" />
-                                            
-                                            <div class="elementor-element elementor-element-43f37ec5 elementor-widget elementor-widget-heading" data-id="43f37ec5" data-element_type="widget" data-widget_type="heading.default">
-                                                <div class="elementor-widget-container">
-                                                    <h2 class="elementor-heading-title elementor-size-default" id="sgggg">CENTRAL CEE at 44 Toronto</h2>
-                                                </div>
-                                                <div class="elementor-widget-container">
-                                                    <ul class="elementor-icon-list-items"> 
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-text" id="dgdgdgdg" style="font-size: 14px;"><i id="njgnj" class="fa">&#xf041;</i> 44 Toronto</span>
-                                                        </li> 
-                                                    </ul>
-                                                    <div style="width: 3.5rem;border-bottom-width: 0.5px;border-bottom: 1 solid #e5e7eb;margin-left:4%;margin-bottom: 4%;"></div>
-                                                </div>
-                                               </a>  
-                                                <div class="row" style="margin-bottom: 5%;">
-                                                    <div  class="col-md-6 col-7"><span class="elementor-icon-list-text" id="dgdgdgdg2">16, 2023 @ 10:00 pm</span></div>
-                                                    <div  class="col-md-6 col-5"><span class="elementor-icon-list-text" id="dgdgdgdg3">
-                                                        <i id="njgnj" class="fa fa-star checked" style="font-size: 18px;color: #ffc107;"></i> 4.5 
-                                                        <a href="" id="sdgtmmmm">All Review</a></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
- 
-                                    <div  class="col-md-4">
-                                        <a  href="event-details.php"> 
-                                        <div class="elementor-widget-wrap elementor-element-populated" id="hgdfh">
-                                            <div id="kjngkr">Featured</div>
-                                             <img id="grgrgrgrynjyth" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-club-party-flyer-design-template-4229436f6b6ead72108acfb808e9ab73_screen.jpg?ts=1637051413"  class="img-responsive" />
-                                            
-                                            <div class="elementor-element elementor-element-43f37ec5 elementor-widget elementor-widget-heading" data-id="43f37ec5" data-element_type="widget" data-widget_type="heading.default">
-                                                <div class="elementor-widget-container">
-                                                    <h2 class="elementor-heading-title elementor-size-default" id="sgggg">CENTRAL CEE at 44 Toronto</h2>
-                                                </div>
-                                                <div class="elementor-widget-container">
-                                                    <ul class="elementor-icon-list-items"> 
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-text" id="dgdgdgdg" style="font-size: 14px;"><i id="njgnj" class="fa">&#xf041;</i> 44 Toronto</span>
-                                                        </li> 
-                                                    </ul>
-                                                    <div style="width: 3.5rem;border-bottom-width: 0.5px;border-bottom: 1 solid #e5e7eb;margin-left:4%;margin-bottom: 4%;"></div>
-                                                </div>
-                                               </a>  
-                                                <div class="row" style="margin-bottom: 5%;">
-                                                    <div  class="col-md-6 col-7"><span class="elementor-icon-list-text" id="dgdgdgdg2">16, 2023 @ 10:00 pm</span></div>
-                                                    <div  class="col-md-6 col-5"><span class="elementor-icon-list-text" id="dgdgdgdg3">
-                                                        <i id="njgnj" class="fa fa-star checked" style="font-size: 18px;color: #ffc107;"></i> 4.5 
-                                                        <a href="" id="sdgtmmmm">All Review</a></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-
-                                    <div  class="col-md-4">
-                                        <a  href="event-details.php"> 
-                                        <div class="elementor-widget-wrap elementor-element-populated" id="hgdfh">
-                                            <div id="kjngkr">Featured</div>
-                                             <img id="grgrgrgrynjyth" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-club-party-flyer-design-template-4229436f6b6ead72108acfb808e9ab73_screen.jpg?ts=1637051413"  class="img-responsive" />
-                                            
-                                            <div class="elementor-element elementor-element-43f37ec5 elementor-widget elementor-widget-heading" data-id="43f37ec5" data-element_type="widget" data-widget_type="heading.default">
-                                                <div class="elementor-widget-container">
-                                                    <h2 class="elementor-heading-title elementor-size-default" id="sgggg">CENTRAL CEE at 44 Toronto</h2>
-                                                </div>
-                                                <div class="elementor-widget-container">
-                                                    <ul class="elementor-icon-list-items"> 
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-text" id="dgdgdgdg" style="font-size: 14px;"><i id="njgnj" class="fa">&#xf041;</i> 44 Toronto</span>
-                                                        </li> 
-                                                    </ul>
-                                                    <div style="width: 3.5rem;border-bottom-width: 0.5px;border-bottom: 1 solid #e5e7eb;margin-left:4%;margin-bottom: 4%;"></div>
-                                                </div>
-                                               </a>  
-                                                <div class="row" style="margin-bottom: 5%;">
-                                                    <div  class="col-md-6 col-7"><span class="elementor-icon-list-text" id="dgdgdgdg2">16, 2023 @ 10:00 pm</span></div>
-                                                    <div  class="col-md-6 col-5"><span class="elementor-icon-list-text" id="dgdgdgdg3">
-                                                        <i id="njgnj" class="fa fa-star checked" style="font-size: 18px;color: #ffc107;"></i> 4.5 
-                                                        <a href="" id="sdgtmmmm">All Review</a></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
+                                    @endforeach
+                                @endif
                 
-                                    <div  class="col-md-4">
-                                        <a  href="event-details.php"> 
-                                        <div class="elementor-widget-wrap elementor-element-populated" id="hgdfh">
-                                            <div id="kjngkr">Featured</div>
-                                             <img id="grgrgrgrynjyth" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-club-party-flyer-design-template-4229436f6b6ead72108acfb808e9ab73_screen.jpg?ts=1637051413"  class="img-responsive" />
-                                            
-                                            <div class="elementor-element elementor-element-43f37ec5 elementor-widget elementor-widget-heading" data-id="43f37ec5" data-element_type="widget" data-widget_type="heading.default">
-                                                <div class="elementor-widget-container">
-                                                    <h2 class="elementor-heading-title elementor-size-default" id="sgggg">CENTRAL CEE at 44 Toronto</h2>
-                                                </div>
-                                                <div class="elementor-widget-container">
-                                                    <ul class="elementor-icon-list-items"> 
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-text" id="dgdgdgdg" style="font-size: 14px;"><i id="njgnj" class="fa">&#xf041;</i> 44 Toronto</span>
-                                                        </li> 
-                                                    </ul>
-                                                    <div style="width: 3.5rem;border-bottom-width: 0.5px;border-bottom: 1 solid #e5e7eb;margin-left:4%;margin-bottom: 4%;"></div>
-                                                </div>
-                                               </a>  
-                                                <div class="row" style="margin-bottom: 5%;">
-                                                    <div  class="col-md-6 col-7"><span class="elementor-icon-list-text" id="dgdgdgdg2">16, 2023 @ 10:00 pm</span></div>
-                                                    <div  class="col-md-6 col-5"><span class="elementor-icon-list-text" id="dgdgdgdg3">
-                                                        <i id="njgnj" class="fa fa-star checked" style="font-size: 18px;color: #ffc107;"></i> 4.5 
-                                                        <a href="" id="sdgtmmmm">All Review</a></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>              
-                
-                                    <div  class="col-md-4">
-                                        <a  href="event-details.php">
-                                            
-                                        <div class="elementor-widget-wrap elementor-element-populated" id="hgdfh">
-                                            <div id="kjngkr">Featured</div>
-                                             <img id="grgrgrgrynjyth" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/night-club-party-flyer-design-template-4229436f6b6ead72108acfb808e9ab73_screen.jpg?ts=1637051413"  class="img-responsive" />
-                                            
-                                            <div class="elementor-element elementor-element-43f37ec5 elementor-widget elementor-widget-heading" data-id="43f37ec5" data-element_type="widget" data-widget_type="heading.default">
-                                                <div class="elementor-widget-container">
-                                                    <h2 class="elementor-heading-title elementor-size-default" id="sgggg">CENTRAL CEE at 44 Toronto</h2>
-                                                </div>
-                                                <div class="elementor-widget-container">
-                                                    <ul class="elementor-icon-list-items"> 
-                                                        <li class="elementor-icon-list-item">
-                                                            <span class="elementor-icon-list-text" id="dgdgdgdg" style="font-size: 14px;"><i id="njgnj" class="fa">&#xf041;</i> 44 Toronto</span>
-                                                        </li> 
-                                                    </ul>
-                                                    <div style="width: 3.5rem;border-bottom-width: 0.5px;border-bottom: 1 solid #e5e7eb;margin-left:4%;margin-bottom: 4%;"></div>
-                                                </div>
-                                               </a>  
-                                                <div class="row" style="margin-bottom: 5%;">
-                                                    <div  class="col-md-6 col-7"><span class="elementor-icon-list-text" id="dgdgdgdg2">16, 2023 @ 10:00 pm</span></div>
-                                                    <div  class="col-md-6 col-5"><span class="elementor-icon-list-text" id="dgdgdgdg3">
-                                                        <i id="njgnj" class="fa fa-star checked" style="font-size: 18px;color: #ffc107;"></i> 4.5 
-                                                        <a href="" id="sdgtmmmm">All Review</a></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>             
+                                                
                 
                         </div> 
                     </div>  

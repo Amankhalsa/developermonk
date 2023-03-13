@@ -58,6 +58,9 @@ Route::prefix('admin')->group(function(){
 
         Route::post('/add', 'addEvents')->name('admin_add_events');
 
+        Route::get('/delete/{id}', 'delete_event')->name('admin_delete_events');
+
+
         
 
     });
